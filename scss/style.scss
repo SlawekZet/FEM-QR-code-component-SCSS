@@ -1,0 +1,52 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: $light_gray;
+  font-family: $font-stack;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  max-width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 10px 5px 55px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .description {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-evenly;
+    margin: 20px 15px;
+
+    p {
+      font-weight: 400;
+      color: $grayish_blue;
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .bold-text {
+      font-weight: 700;
+      color: $dark_blue;
+      font-size: 21px;
+      padding-bottom: 15px;
+    }
+  }
+}
